@@ -6,6 +6,7 @@
 |-|-|-|
 |[Онлайн приложение](https://make.girls.moe/), [PDF](https://github.com/makegirlsmoe/makegirlsmoe.github.io/blob/master/assets/pdf/technical_report.pdf)|Генерация лиц в мультипликационном стиле "Аниме" в реальном времени с настройкой параметров. Область применения: автоматическое создание иллюстраций, генерация мультфильмов. Архитектура: GAN ([DRAGAN](https://github.com/kodalinaveen3/DRAGAN)), сверточные блоки; более подробно архитектура описана в PDF. (А это не знаю по приколу или нет написал)|Шепрут|
 |[Статья на Хабре](https://habr.com/ru/post/428896/), [бинарники под винду](https://github.com/deeppomf/DeepCreamPy/releases)|Просто по приколу написал.|Шепрут|
+|[Онлайн приложение](https://quickdraw.withgoogle.com/#)|Распознавание нарисованных вами объектов за 20 секунд. Архитектура: вроде GAN (не уверен) (много интересной инфы написано [тут](https://hackernoon.com/catgan-cat-face-generation-using-gans-f44663586d6b)), [github датасетов](https://github.com/googlecreativelab/quickdraw-dataset) |Утюганов|
 
 # Согласования об именовании файлов
 
