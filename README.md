@@ -8,8 +8,7 @@
 |Ресурс|Краткое описание области применения, архитектура|Автор записи|
 |-|-|-|
 |[Онлайн приложение](https://quickdraw.withgoogle.com/#)|Распознавание нарисованных вами объектов за 20 секунд. Архитектура: вроде GAN (не уверен) (много интересной инфы написано [тут](https://hackernoon.com/catgan-cat-face-generation-using-gans-f44663586d6b)), [github датасетов](https://github.com/googlecreativelab/quickdraw-dataset) |Утюганов|
-|[Онлайн приложение](https://greenscreen-ai.boorgle.com/), [Архитектура](https://towardsdatascience.com/background-removal-with-deep-learning-c4f2104b3157)|Удаление фона оригинальных изображений (датасет мордочек не подходит). Внимание: хорошо работает либо при высоком контрасте фона и объекта, либо если фон занимает значительную часть изображения|Кожекин|
-|[Исходники](https://github.com/eborboihuc/rotate_3d)|наклон изображения в трехмерном пространстве при помощи матрицы поворота и проекции из openCV|Кожекин|
+|[Онлайн приложение](https://greenscreen-ai.boorgle.co m/)|Удаление фона оригинальных изображений (датасет мордочек не подходит). Внимание: хорошо работает либо при высоком контрасте фона и объекта, либо если фон занимает значительную часть изображения. Архитектура:[The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/abs/1611.09326) [Сравнение с предшественниками](https://towardsdatascience.com/background-removal-with-deep-learning-c4f2104b3157)|Кожекин|
 
 # Согласования об именовании файлов
 
