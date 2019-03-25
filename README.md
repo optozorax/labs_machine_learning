@@ -40,6 +40,8 @@
 
 Полезный код: [Исходники](https://github.com/eborboihuc/rotate_3d) - наклон изображения в трехмерном пространстве при помощи матрицы поворота и проекции из openCV. (с) Кожекин.
 
+Есть даже специальная функция в keras для генерации изображений: [https://keras.io/preprocessing/image/](https://keras.io/preprocessing/image/).
+
 # Интересные статьи
 
 * [https://youtu.be/HP9S1Az8Tuw](https://youtu.be/HP9S1Az8Tuw), [AlphaGo Zero совсем на пальцах / Хабр](https://habr.com/ru/post/343590/)
