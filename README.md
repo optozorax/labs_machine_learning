@@ -8,6 +8,8 @@
 
 На Linux всё очень плохо, поэтому ставьте на Windows. Сначала устанавливаете Anaconda 3, затем с помощью [этой статьи](https://www.asozykin.ru/deep_learning/2017/09/07/Keras-Installation-TensorFlow.html) ставите tensorflow и keras, а так же для GPU.
 
+Туториал по работе с изображениями: [https://www.youtube.com/watch?v=j-3vuBynnOE](https://www.youtube.com/watch?v=j-3vuBynnOE). Для установки `cv2` можно использовать команду `conda install opencv`.
+
 # Ссылка на отчёт
 [Отчёт на docs.google](https://docs.google.com/document/d/1l64QFcJGvTqRiP2qpEo5nNQ7DZtgBXln25ZfL_Iuqfs/edit)
 
