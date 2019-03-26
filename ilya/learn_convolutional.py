@@ -13,8 +13,8 @@ datadir = "D:/My/programs/labs_machine_learning/ilya"
 
 #-----------------------------------------------------------------------------
 # Загружаем тренировочные данные
-X = pickle.load(open(datadir + "/processed/X_train.pickle", "rb"))
-y = pickle.load(open(datadir + "/processed/y_train.pickle", "rb"))
+X = pickle.load(open(datadir + "/X_train.pickle", "rb"))
+y = pickle.load(open(datadir + "/y_train.pickle", "rb"))
 
 #X = pickle.load(open(datadir + "/test/X_test.pickle", "rb"))
 #y = pickle.load(open(datadir + "/test/y_test.pickle", "rb"))
@@ -35,18 +35,24 @@ test_data = (X_test, y_test)
 #filter_sizes = [2, 3, 4]
 
 # Отличные конфигурации: 
-# 64x2(3x3)+0dense, 2 эпохи - хорошо обучается, 80%
-# 128x3(3x3)+0dense, 1 эпоха, обучается 85%
+# 64x2(3x3)+0dense, 2 эпохи, 80%
+# 128x3(3x3)+0dense, 1 эпоха, 85%
+# 95x3(3x3)+0dense - 87.5%
+# 109x3(3x3)+0dense - 87.5% - эта конфигурация менее стабильна, чем две соседние
+# 130x3(3x3)+0dense - 87.5%
 
-conv_layers = [3, 4, 5]
-conv_sizes = [128, 256]
-filter_sizes = [3, 4, 5]
+
+conv_layers = [3]
+conv_sizes = [95, 109, 128, 130]
+filter_sizes = [3]
+
+f = open(datadir + "/error.txt", "wt")
 
 for conv_layer in conv_layers:
     for conv_size in conv_sizes:
         for filter_size in filter_sizes:
             # Устанавливаем логирование во время обучения
-            NAME = f"({filter_size}x{filter_size}).{conv_size}x{conv_layer}-Conv.{dense_layer}-Dense"
+            NAME = f"small_({filter_size}x{filter_size}).{conv_size}x{conv_layer}-Conv"
             tensorboard = TensorBoard(log_dir=f"{datadir}/logs/{NAME}")
             
             print(NAME)
@@ -77,9 +83,10 @@ for conv_layer in conv_layers:
             try:
                 model.fit(X, y, 
                           batch_size=8, 
-                          epochs=3, 
+                          epochs=20, 
                           validation_split=0, validation_data=test_data,
                           callbacks=[tensorboard])
             except Exception as e:
                 # Записать в файл имя ошибочного файла
+                f.write(NAME + "\n")
                 pass
