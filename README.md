@@ -8,7 +8,18 @@
 
 На Linux всё очень плохо, поэтому ставьте на Windows. Сначала устанавливаете Anaconda 3, затем с помощью [этой статьи](https://www.asozykin.ru/deep_learning/2017/09/07/Keras-Installation-TensorFlow.html) ставите tensorflow и keras, а так же для GPU.
 
-Туториал по работе с изображениями: [https://www.youtube.com/watch?v=j-3vuBynnOE](https://www.youtube.com/watch?v=j-3vuBynnOE). Для установки `cv2` можно использовать команду `conda install opencv`.
+# Туториал по keras на примере кошек и собак
+
+Для установки `cv2` можно использовать команду `conda install opencv`.
+
+|Видео на Youtube|Текстовая версия|Краткое описание|
+|-|-|-|
+|[1](https://www.youtube.com/watch?v=wQ8BIBpya2k)|[1](https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/)|Введение|
+|[2](https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/?completed=/introduction-deep-learning-python-tensorflow-keras/)|[2](https://www.youtube.com/watch?v=j-3vuBynnOE)|Загрузка собственных изображений для обучения|
+|[3](https://pythonprogramming.net/convolutional-neural-network-deep-learning-python-tensorflow-keras/)|[3](https://www.youtube.com/watch?v=WvoLTXIjBYU)|Сверточные нейронные сети|
+|[4](https://pythonprogramming.net/tensorboard-analysis-deep-learning-python-tensorflow-keras/)|[4](https://www.youtube.com/watch?v=BqgTU7_cBnk)|Анализ с помощью tensorboard|
+|[5](https://pythonprogramming.net/tensorboard-optimizing-models-deep-learning-python-tensorflow-keras/)|[5](https://www.youtube.com/watch?v=lV09_8432VA)|Оптимизация модели с помощью tensorboard|
+|soo|ooooo|oon...|
 
 # Ссылка на отчёт
 [Отчёт на docs.google](https://docs.google.com/document/d/1l64QFcJGvTqRiP2qpEo5nNQ7DZtgBXln25ZfL_Iuqfs/edit)
