@@ -33,12 +33,6 @@
 |[Видео](https://www.youtube.com/watch?v=4VAkrUNLKSo) [Код](https://github.com/HackerPoet/FaceEditor)|Генерация лиц при помощи выставления признаков. Архитектура: автокодировщик + метод главных компонент.|Шепрут|
 |[Онлайн приложение](https://greenscreen-ai.boorgle.com)|Удаление фона оригинальных изображений (датасет мордочек не подходит). Внимание: хорошо работает либо при высоком контрасте фона и объекта, либо если фон занимает значительную часть изображения. Архитектура:[The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/abs/1611.09326) [Сравнение с предшественниками](https://towardsdatascience.com/background-removal-with-deep-learning-c4f2104b3157)|Кожекин|
 
-# Согласования об именовании файлов
-
-Пока договорились о таком именовании:
-
-`(cat/dog)_<первая буква имени>_nnnn.jpg`, например: `cat_d_0001.jpg`, `dog_t_1000.jpg`.
-
 # Методы генерации изображений
 
 * Отразить по вертикали, горизонтали
