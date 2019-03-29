@@ -12,9 +12,9 @@
 
 Для установки `cv2` можно использовать команду `conda install opencv`.
 
-|Видео на Youtube|Текстовая версия|Краткое описание|
+|Текстовая версия|Видео на Youtube|Краткое описание|
 |-|-|-|
-|[1](https://www.youtube.com/watch?v=wQ8BIBpya2k)|[1](https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/)|Введение|
+|[1](https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/)|[1](https://www.youtube.com/watch?v=wQ8BIBpya2k)|Введение|
 |[2](https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/?completed=/introduction-deep-learning-python-tensorflow-keras/)|[2](https://www.youtube.com/watch?v=j-3vuBynnOE)|Загрузка собственных изображений для обучения|
 |[3](https://pythonprogramming.net/convolutional-neural-network-deep-learning-python-tensorflow-keras/)|[3](https://www.youtube.com/watch?v=WvoLTXIjBYU)|Сверточные нейронные сети|
 |[4](https://pythonprogramming.net/tensorboard-analysis-deep-learning-python-tensorflow-keras/)|[4](https://www.youtube.com/watch?v=BqgTU7_cBnk)|Анализ с помощью tensorboard|
