@@ -34,6 +34,9 @@
 |[Онлайн приложение](https://greenscreen-ai.boorgle.com)|Удаление фона оригинальных изображений (датасет мордочек не подходит). Внимание: хорошо работает либо при высоком контрасте фона и объекта, либо если фон занимает значительную часть изображения. Архитектура:[The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation](https://arxiv.org/abs/1611.09326) [Сравнение с предшественниками](https://towardsdatascience.com/background-removal-with-deep-learning-c4f2104b3157)|Кожекин|
 |[Онлайн приложение](http://cvl-demos.cs.nott.ac.uk/vrn/)| 3D реконструкция лица. Архитектура: Обучение сверточной нейронной сети (CNN) на соответствующем наборе данных, состоящем из 2D-изображений и 3D-моделей лица или сканирований.Как итог: нейросеть выполняет прямую регрессию объемного представления 3D-геометрии лица из одного 2D-изображения. [Видео](http://aaronsplace.co.uk/papers/jackson2017recon/) [Код](https://github.com/AaronJackson/vrn)|Назарова|
 |[Онлайн приложение](https://www.how-old.net/)|Распознование возраста на фотографии, не работает на животных(пишет что это не человек)|Майер|
+|[Видео-урок](https://www.youtube.com/watch?v=r2KA99ThEH4&feature=youtu.be)|Урок о сегментационных нейронных сетях, объясняется очень доходчиво, от профессионала своего дела.|Шепрут|
+|[Видео-урок](https://www.youtube.com/watch?v=ajEQ10s8XRg&feature=youtu.be)|Урок по metric learning, triple loss, GAN'ах и автокодировщиках.|Шепрут|
+|[AlphaGo](https://habr.com/ru/post/279071/), [AlphaGoZero](https://habr.com/ru/post/343590/)|Статьи, объясняющие работу AlphaGo - программы, победившей человека в игре Го. Объясняются подходы обучения с подкреплением (reinforcement learning) на примере этой программы с использованием нейросети.|Шепрут|
 
 # Методы генерации изображений
 
