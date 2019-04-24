@@ -52,6 +52,10 @@
 
 Есть даже специальная функция в keras для генерации изображений: [https://keras.io/preprocessing/image/](https://keras.io/preprocessing/image/).
 
+# Можно использовать для оптимизации гиперпараметров
+
+[https://github.com/fmfn/BayesianOptimization](https://github.com/fmfn/BayesianOptimization)
+
 # Интересные статьи
 
 * [https://youtu.be/HP9S1Az8Tuw](https://youtu.be/HP9S1Az8Tuw), [AlphaGo Zero совсем на пальцах / Хабр](https://habr.com/ru/post/343590/)

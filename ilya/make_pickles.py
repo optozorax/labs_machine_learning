@@ -11,7 +11,7 @@ def make_training(datadir, categories, size):
         class_num = categories.index(category)
         for img in os.listdir(path):
             try:
-                img_array = cv2.imread(os.path.join(path, img), cv2.IMREAD_GRAYSCALE)
+                img_array = cv2.imread(os.path.join(path, img), cv2.IMREAD_COLOR)
                 new_array = cv2.resize(img_array, (size, size))
                 training_data.append([new_array, class_num])
             except Exception as e:
@@ -29,7 +29,7 @@ def create_pickle(datadirs, categories, size, name):
             X.append(features)
             y.append(label)
         
-    X = np.array(X).reshape(-1, size, size, 1)
+    X = np.array(X).reshape(-1, size, size, 3)
     
     # Нормализуем данные
     X = X/255.0
@@ -47,4 +47,4 @@ datadir = "D:/My/programs/labs_machine_learning/"
 imgsize = 100
 create_pickle([datadir + "/ilya"], categories, imgsize, "train")
 create_pickle([datadir + "/ilya/processed"], categories, imgsize, "train")
-create_pickle([datadir + "/ilya/test", datadir + "/david/training"], categories, imgsize, "test")
+create_pickle([datadir + "/ilya/test", datadir + "/david/testing_images", datadir + "/misha/source_test", datadir + "/nikita/test", datadir + "/tanya/Test/Test", datadir + "/valera/test"], categories, imgsize, "test")

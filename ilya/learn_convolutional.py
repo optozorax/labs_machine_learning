@@ -13,8 +13,8 @@ datadir = "D:/My/programs/labs_machine_learning/ilya"
 
 #-----------------------------------------------------------------------------
 # Загружаем тренировочные данные
-X = pickle.load(open(datadir + "/X_train.pickle", "rb"))
-y = pickle.load(open(datadir + "/y_train.pickle", "rb"))
+X = pickle.load(open(datadir + "/processed/X_train.pickle", "rb"))
+y = pickle.load(open(datadir + "/processed/y_train.pickle", "rb"))
 
 #X = pickle.load(open(datadir + "/test/X_test.pickle", "rb"))
 #y = pickle.load(open(datadir + "/test/y_test.pickle", "rb"))
@@ -52,7 +52,7 @@ for conv_layer in conv_layers:
     for conv_size in conv_sizes:
         for filter_size in filter_sizes:
             # Устанавливаем логирование во время обучения
-            NAME = f"small_({filter_size}x{filter_size}).{conv_size}x{conv_layer}-Conv"
+            NAME = f"({filter_size}x{filter_size}).{conv_size}x{conv_layer}-Conv"
             tensorboard = TensorBoard(log_dir=f"{datadir}/logs/{NAME}")
             
             print(NAME)
@@ -83,7 +83,7 @@ for conv_layer in conv_layers:
             try:
                 model.fit(X, y, 
                           batch_size=8, 
-                          epochs=20, 
+                          epochs=5, 
                           validation_split=0, validation_data=test_data,
                           callbacks=[tensorboard])
             except Exception as e:

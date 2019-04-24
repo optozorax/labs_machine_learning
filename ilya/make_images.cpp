@@ -100,7 +100,7 @@ int main() {
 		sout << "cats/" << i << ".jpg";
 
 		std::wstringstream sout2;
-		sout2 << "cats/" << i << ".png";
+		sout2 << "cats_mask/" << i << ".png";
 		merge_all_backgrounds_and_image(sout.str(), sout2.str(), backCount * backMake, L"processed_backgrounds/", L"processed_cats/");
 	}
 
@@ -111,7 +111,7 @@ int main() {
 		sout << "dogs/" << i << ".jpg";
 
 		std::wstringstream sout2;
-		sout2 << "dogs/" << i << ".png";
+		sout2 << "dogs_mask/" << i << ".png";
 		merge_all_backgrounds_and_image(sout.str(), sout2.str(), backCount * backMake, L"processed_backgrounds/", L"processed_dogs/");
 	}
 }
