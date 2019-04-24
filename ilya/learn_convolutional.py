@@ -3,8 +3,8 @@ import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D, AveragePooling2D
 from tensorflow.keras.callbacks import TensorBoard
+from tensorflow.keras.models import model_from_json
 import pickle
-import time
 
 gpu_options = tf.GPUOptions(allow_growth=True)
 session = tf.InteractiveSession(config=tf.ConfigProto(gpu_options=gpu_options))
@@ -83,9 +83,17 @@ for conv_layer in conv_layers:
             try:
                 model.fit(X, y, 
                           batch_size=8, 
-                          epochs=5, 
+                          epochs=2, 
                           validation_split=0, validation_data=test_data,
                           callbacks=[tensorboard])
+                
+                # serialize model to JSON
+                model_json = model.to_json()
+                with open(datadir + f"/models/{NAME}.json", "w") as json_file:
+                    json_file.write(model_json)
+                # serialize weights to HDF5
+                model.save_weights(datadir + f"/models/{NAME}.h5")
+                print("Saved model to disk")
             except Exception as e:
                 # Записать в файл имя ошибочного файла
                 f.write(NAME + "\n")
