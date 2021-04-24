@@ -37,7 +37,7 @@
 |[Видео-урок](https://www.youtube.com/watch?v=r2KA99ThEH4&feature=youtu.be)|Урок о сегментационных нейронных сетях, объясняется очень доходчиво, от профессионала своего дела.|Шепрут|
 |[Видео-урок](https://www.youtube.com/watch?v=ajEQ10s8XRg&feature=youtu.be)|Урок по metric learning, triple loss, GAN'ах и автокодировщиках.|Шепрут|
 |[AlphaGo](https://habr.com/ru/post/279071/), [AlphaGoZero](https://habr.com/ru/post/343590/)|Статьи, объясняющие работу AlphaGo - программы, победившей человека в игре Го. Объясняются подходы обучения с подкреплением (reinforcement learning) на примере этой программы с использованием нейросети.|Шепрут|
-|[data-set от google](https://storage.googleapis.com/openimages/web/index.html)|Огромный датасет размеченных данных искользуется в computer vision.|Кожекин|
+|[data-set от google](https://storage.googleapis.com/openimages/web/index.html)|Огромный датасет размеченных данных используется в computer vision.|Кожекин|
 
 # Методы генерации изображений
 
